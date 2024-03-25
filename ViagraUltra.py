@@ -39,31 +39,19 @@ is_linux = system == 'linux'
 is_mac = system == 'darwin'
 is_android = False
 
-try:
-    import androidhelper as sl4a
-    ad = sl4a.Android()
-    is_android = True
-except:
-    print("Impossible d'importer androidhelper")
-
-if is_android:
-    combo_dir = '/storage/emulated/0/combo'
-    audiohit_file = '/storage/emulated/0/sound/hit.mp3'
-    hits_dir = '/storage/emulated/0/hits/𝐕𝐈𝐀𝐆𝐑𝐀.𝐔𝐋𝐓𝐑𝐀/'
-    print("Chemin des fichiers pour Android défini")
-elif is_mac:
+if is_mac:
     combo_dir = '/Users/dumancan/Desktop/combo'
     audiohit_file = '/Users/dumancan/Desktop/sound/hit.mp3'
     hits_dir = '/Users/dumancan/Desktop/hits/'
     print("Chemin des fichiers pour macOS défini")
-elif is_windows:
-    combo_dir = './combo/'
-    audiohit_file = './sounds/hit.wav'
-    hits_dir = './hits/'
-    print("Chemin des fichiers pour Windows défini")
-elif is_linux:
-    print("Sem suporte para linux")
-    quit()
+else:
+    if is_linux:
+        print("Sem suporte para linux")
+        quit()
+    if is_windows:
+        combo_dir = './combo/'
+        audiohit_file = './sounds/hit.wav'
+        hits_dir = './hits/'
 
 
 
