@@ -46,9 +46,9 @@ except:pass
 
 
 if is_android:
-    combo_dir = '/storage/emulated/0/combo'
-    audiohit_file = '/storage/emulated/0/sound/hit.mp3'
-    hits_dir = '/storage/emulated/0/hits/𝐕𝐈𝐀𝐆𝐑𝐀.𝐔𝐋𝐓𝐑𝐀/'
+    combo_dir = '/sdcard/combo/'
+    audiohit_file = '/sdcard/hit.mp3'
+    hits_dir = '/sdcard/Hits/𝐕𝐈𝐀𝐆𝐑𝐀.𝐔𝐋𝐓𝐑𝐀/'
 else:
     if is_linux:
         print("Sem suporte para linux")
