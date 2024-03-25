@@ -46,20 +46,22 @@ except:pass
 
 
 if is_android:
-	combo_dir = '/Users/dumancan/Desktop/combo'
-	audiohit_file = '/Users/dumancan/Desktop/sound/hit.mp3'
-	hits_dir = '/Users/dumancan/Desktop/hits/𝐕𝐈𝐀𝐆𝐑𝐀.𝐔𝐋𝐓𝐑𝐀/'
+    combo_dir = '/storage/emulated/0/combo'
+    audiohit_file = '/storage/emulated/0/sound/hit.mp3'
+    hits_dir = '/storage/emulated/0/hits/𝐕𝐈𝐀𝐆𝐑𝐀.𝐔𝐋𝐓𝐑𝐀/'
 else:
-	if is_linux:
-		print("Sem suporte para linux")
-		quit()
-if is_mac:
-	print("Sem suporte para mac")
-	quit()
-if is_windows:
-	combo_dir = './combo/'
-	audiohit_file = './sounds/hit.wav'
-	hits_dir = './hits/'
+    if is_linux:
+        print("Sem suporte para linux")
+        quit()
+    if is_mac:
+        combo_dir = '/Users/dumancan/Desktop/combo'
+        audiohit_file = '/Users/dumancan/Desktop/soundhit.mp3'
+        hits_dir = '/Users/dumancan/Desktop/hits/𝐕𝐈𝐀𝐆𝐑𝐀.𝐔𝐋𝐓𝐑𝐀/'
+    if is_windows:
+        combo_dir = './combo/'
+        audiohit_file = './sounds/hit.wav'
+        hits_dir = './hits/'
+
 ######################################################
 
 
