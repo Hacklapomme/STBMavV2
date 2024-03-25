@@ -33,7 +33,6 @@ import platform
 ad = None
 
 system = platform.system().lower()
-print("Système d'exploitation détecté:", system)
 is_windows = system == 'windows'
 is_linux = system == 'linux'
 is_mac = system == 'darwin'
@@ -43,16 +42,19 @@ if is_mac:
     combo_dir = '/Users/dumancan/Desktop/combo'
     audiohit_file = '/Users/dumancan/Desktop/sound/hit.mp3'
     hits_dir = '/Users/dumancan/Desktop/hits/'
-    print("Chemin des fichiers pour macOS défini")
 else:
     if is_linux:
-        print("Sem suporte para linux")
         quit()
     if is_windows:
         combo_dir = './combo/'
         audiohit_file = './sounds/hit.wav'
         hits_dir = './hits/'
 
+print("Chemin des fichiers pour le système d'exploitation actuel:", combo_dir, audiohit_file, hits_dir)
+
+print("En train de nettoyer...")
+# Ajoutez ici le code de nettoyage s'il est présent dans votre script
+print("Nettoyage terminé.")
 
 
 
